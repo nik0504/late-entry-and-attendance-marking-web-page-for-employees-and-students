@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signcatch</title>
+	<center><h1 style='font-family: serif; background-color: #4CAF50;color: white;font-size: 50px'>SignCatch Employees</h1></center>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="F:\webb\employee\get.js"></script>
+	<script src="F:\webb\employee\lateEntry.js"></script>
+	<!-- <script src="F:\webb\employee\rep.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+
+</head>
+<body style="background-color: lightyellow">
+		
+	<ul>
+	    <li><a class="active" href="#listing">Employee List</a></li>
+	    <li><a class="late" href="#late_entry">Late Entry</a></li>
+	    <li><a class="report1" href="#report">Report</a></li>
+    </ul>
+
+  <form name="employeeForm" style="margin-left:25%;" id="tab">
+		<!-- <p id="print"></p> -->
+  </form>
+	
+		<button id="bu1" >Add New Employee</button>
+		<div id="form1">
+			<form>
+				<h2>Name</h2>
+				<input type="text" id="nameI">
+				<button id="bu2">Submit</button>
+			</form>
+		</div>
+		<div id='bt3'>
+			<br><button  type='Submit' onclick="formSubmit()">Submit</button>
+		</div>
+		<div id="record1">
+		<form>
+			<p>From Date </p>
+			<input type="date" id="from">
+			<p>To Date </p>
+			<input type="date" id="toDate"><br><br>
+			<button id="finalRep">Get Report</button>
+		</form>
+	</div>
+</body>
+</html>
+
